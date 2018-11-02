@@ -1,10 +1,17 @@
 
+import java.awt.Image;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.*;
+import javax.imageio.ImageIO;
 import javax.swing.*;
 
 public class MainpageService {
 
-    static String imageLocation;
+    static Image image = null;
 
     public static ArrayList<Product> showAllProduct() {
         return ProductDao.getAllProducts();
