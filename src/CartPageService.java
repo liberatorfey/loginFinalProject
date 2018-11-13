@@ -1,7 +1,7 @@
 
 import javax.swing.JOptionPane;
 
-public class CartPageService {
+public abstract class CartPageService {
 
     public static void increaseItem() {
         int index = Integer.parseInt(CartPage.index1.getText());
@@ -69,5 +69,6 @@ public class CartPageService {
             int y = Integer.parseInt(CartPage.total2.getText());
             CartPage.sum.setText(""+(x+y)+" บาท");
     }
+    abstract public void showPayment();
 
 }

@@ -9,9 +9,7 @@ import java.util.*;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 
-public class MainpageService {
-
-    static Image image = null;
+public abstract class MainpageService {
 
     public static ArrayList<Product> showAllProduct() {
         return ProductDao.getAllProducts();
@@ -57,4 +55,18 @@ public class MainpageService {
         }
 
     }
+
+    public static void showCart() {
+        Random ran = new Random();
+        int a = ran.nextInt(2);
+        if (a == 0) {
+            JOptionPane.showMessageDialog(null, "ไม่มีสินค้าอยู่ในตะกร้า !", "Warning Message !", a);
+        } else {
+            CartPage cart = new CartPage();
+            cart.setVisible(true);
+        }
+    }
+
+    abstract public  void showProfile() ;
+    abstract public  void addtoCart();
 }

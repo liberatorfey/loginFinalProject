@@ -304,14 +304,7 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void cartBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cartBtnActionPerformed
-        Random ran = new Random();
-        int a= ran.nextInt(2);
-        if(a==0){
-            JOptionPane.showMessageDialog(null, "ไม่มีสินค้าอยู่ในตะกร้าจ้า !","Warning Message !",a);
-        }else{
-            CartPage cart = new CartPage();
-            cart.setVisible(true);
-        }
+        MainpageService.showCart();
         
     }//GEN-LAST:event_cartBtnActionPerformed
 
