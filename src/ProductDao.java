@@ -21,6 +21,7 @@ public class ProductDao {
     static MongoDatabase db = client.getDatabase(uri.getDatabase());
     static MongoCollection<Document> col = db.getCollection("product");
     static GridFSBucket gridFSBucket = GridFSBuckets.create(db);
+    
     static public ArrayList<Product> getAllProducts() {
         MongoCursor<Document> cursor = col.find().iterator();
         ArrayList<Product> products = new ArrayList<>();
@@ -43,15 +44,7 @@ public class ProductDao {
         }
         return thisProduct;
     }
-     public static byte[] LoadImage(String filePath) throws Exception {
-        File file = new File(filePath);
-        int size = (int)file.length();
-        byte[] buffer = new byte[size];
-        FileInputStream in = new FileInputStream(file);
-        in.read(buffer);
-        in.close();
-        return buffer;
-    }
+     
   public static void main(String[] args) throws Exception {
 //        //Load our image
 //        byte[] imageBytes = LoadImage("C:/Temp/bear.bmp");

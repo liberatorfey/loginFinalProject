@@ -1,5 +1,7 @@
 
+import java.util.Random;
 import javax.swing.Icon;
+import javax.swing.JOptionPane;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -30,18 +32,18 @@ public class MainPage extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton4 = new javax.swing.JButton();
+        detatilbtn1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        detatilbtn2 = new javax.swing.JButton();
+        detatilbtn3 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        detatilbtn4 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
+        detatilbtn5 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
+        detatilbtn6 = new javax.swing.JButton();
         jButton13 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        cartBtn = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         x6 = new javax.swing.JLabel();
@@ -64,14 +66,14 @@ public class MainPage extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(746, 600));
         getContentPane().setLayout(null);
 
-        jButton4.setText("รายละเอียด");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        detatilbtn1.setText("รายละเอียด");
+        detatilbtn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                detatilbtn1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4);
-        jButton4.setBounds(60, 250, 90, 23);
+        getContentPane().add(detatilbtn1);
+        detatilbtn1.setBounds(60, 250, 90, 23);
 
         jButton2.setText("+");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -82,23 +84,23 @@ public class MainPage extends javax.swing.JFrame {
         getContentPane().add(jButton2);
         jButton2.setBounds(150, 250, 40, 23);
 
-        jButton5.setText("รายละเอียด");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        detatilbtn2.setText("รายละเอียด");
+        detatilbtn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                detatilbtn2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5);
-        jButton5.setBounds(290, 250, 90, 23);
+        getContentPane().add(detatilbtn2);
+        detatilbtn2.setBounds(290, 250, 90, 23);
 
-        jButton6.setText("รายละเอียด");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        detatilbtn3.setText("รายละเอียด");
+        detatilbtn3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                detatilbtn3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton6);
-        jButton6.setBounds(530, 250, 90, 23);
+        getContentPane().add(detatilbtn3);
+        detatilbtn3.setBounds(530, 250, 90, 23);
 
         jButton7.setText("+");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -109,14 +111,14 @@ public class MainPage extends javax.swing.JFrame {
         getContentPane().add(jButton7);
         jButton7.setBounds(380, 250, 40, 23);
 
-        jButton8.setText("รายละเอียด");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        detatilbtn4.setText("รายละเอียด");
+        detatilbtn4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                detatilbtn4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton8);
-        jButton8.setBounds(60, 440, 90, 23);
+        getContentPane().add(detatilbtn4);
+        detatilbtn4.setBounds(60, 440, 90, 23);
 
         jButton9.setText("+");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
@@ -127,14 +129,14 @@ public class MainPage extends javax.swing.JFrame {
         getContentPane().add(jButton9);
         jButton9.setBounds(150, 440, 40, 23);
 
-        jButton10.setText("รายละเอียด");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        detatilbtn5.setText("รายละเอียด");
+        detatilbtn5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                detatilbtn5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton10);
-        jButton10.setBounds(300, 440, 90, 23);
+        getContentPane().add(detatilbtn5);
+        detatilbtn5.setBounds(300, 440, 90, 23);
 
         jButton11.setText("+");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
@@ -145,14 +147,14 @@ public class MainPage extends javax.swing.JFrame {
         getContentPane().add(jButton11);
         jButton11.setBounds(390, 440, 40, 23);
 
-        jButton12.setText("รายละเอียด");
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
+        detatilbtn6.setText("รายละเอียด");
+        detatilbtn6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+                detatilbtn6ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton12);
-        jButton12.setBounds(530, 440, 90, 23);
+        getContentPane().add(detatilbtn6);
+        detatilbtn6.setBounds(530, 440, 90, 23);
 
         jButton13.setText("+");
         jButton13.addActionListener(new java.awt.event.ActionListener() {
@@ -163,15 +165,15 @@ public class MainPage extends javax.swing.JFrame {
         getContentPane().add(jButton13);
         jButton13.setBounds(620, 440, 40, 23);
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton1.setText("ตะกร้าสินค้า");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        cartBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        cartBtn.setText("ตะกร้าสินค้า");
+        cartBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                cartBtnActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(260, 490, 200, 40);
+        getContentPane().add(cartBtn);
+        cartBtn.setBounds(260, 490, 200, 40);
 
         jButton14.setText("Profile");
         jButton14.addActionListener(new java.awt.event.ActionListener() {
@@ -249,61 +251,69 @@ public class MainPage extends javax.swing.JFrame {
         getContentPane().add(jButton15);
         jButton15.setBounds(620, 250, 40, 23);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("D:\\FinalProjects-master\\src\\org\\me\\myimageapp\\resources\\bg.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("E:\\FinalProjects-master\\src\\org\\me\\myimageapp\\resources\\bg.png")); // NOI18N
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 740, 577);
+        jLabel2.setBounds(0, -10, 750, 590);
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void detatilbtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_detatilbtn1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_detatilbtn1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void detatilbtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_detatilbtn2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_detatilbtn2ActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void detatilbtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_detatilbtn3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_detatilbtn3ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton7ActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void detatilbtn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_detatilbtn4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_detatilbtn4ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton9ActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void detatilbtn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_detatilbtn5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_detatilbtn5ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton11ActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void detatilbtn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_detatilbtn6ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
+    }//GEN-LAST:event_detatilbtn6ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton13ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void cartBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cartBtnActionPerformed
+        Random ran = new Random();
+        int a= ran.nextInt(2);
+        if(a==0){
+            JOptionPane.showMessageDialog(null, "ไม่มีสินค้าอยู่ในตะกร้าจ้า !","Warning Message !",a);
+        }else{
+            CartPage cart = new CartPage();
+            cart.setVisible(true);
+        }
+        
+    }//GEN-LAST:event_cartBtnActionPerformed
 
     private void x1AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_x1AncestorAdded
         // TODO add your handling code here:
@@ -358,19 +368,19 @@ public class MainPage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
+    private javax.swing.JButton cartBtn;
+    private javax.swing.JButton detatilbtn1;
+    private javax.swing.JButton detatilbtn2;
+    private javax.swing.JButton detatilbtn3;
+    private javax.swing.JButton detatilbtn4;
+    private javax.swing.JButton detatilbtn5;
+    private javax.swing.JButton detatilbtn6;
     private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
