@@ -19,7 +19,7 @@ public abstract class MainpageService {
         return ProductDao.getProduct(pId);
     }
 
-    static void getinfo() {
+    static void getInfo() {
         ArrayList<Product> product = MainpageService.showAllProduct();
         int i = 0;
         for (Product e : product) {

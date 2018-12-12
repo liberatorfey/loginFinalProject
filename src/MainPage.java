@@ -20,7 +20,7 @@ public class MainPage extends javax.swing.JFrame {
      */
     public MainPage() {
         initComponents();
-        MainpageService.getinfo();
+        MainpageService.getInfo();
     }
 
     /**
@@ -260,7 +260,8 @@ public class MainPage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void detatilbtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_detatilbtn1ActionPerformed
-        // TODO add your handling code here:
+        ProductDetailService.showProductDetail();
+        ProductDetailService.getDetailProduct("S01");
     }//GEN-LAST:event_detatilbtn1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -268,11 +269,13 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void detatilbtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_detatilbtn2ActionPerformed
-        // TODO add your handling code here:
+        ProductDetailService.showProductDetail();
+        ProductDetailService.getDetailProduct("S02");
     }//GEN-LAST:event_detatilbtn2ActionPerformed
 
     private void detatilbtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_detatilbtn3ActionPerformed
-        // TODO add your handling code here:
+       ProductDetailService.showProductDetail();
+       ProductDetailService.getDetailProduct("S03");
     }//GEN-LAST:event_detatilbtn3ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
@@ -280,7 +283,8 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void detatilbtn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_detatilbtn4ActionPerformed
-        // TODO add your handling code here:
+        ProductDetailService.showProductDetail();
+        ProductDetailService.getDetailProduct("S04");
     }//GEN-LAST:event_detatilbtn4ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
@@ -288,7 +292,8 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void detatilbtn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_detatilbtn5ActionPerformed
-        // TODO add your handling code here:
+        ProductDetailService.showProductDetail();
+        ProductDetailService.getDetailProduct("S05");
     }//GEN-LAST:event_detatilbtn5ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
@@ -296,7 +301,8 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void detatilbtn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_detatilbtn6ActionPerformed
-        // TODO add your handling code here:
+        ProductDetailService.showProductDetail();
+        ProductDetailService.getDetailProduct("S06");
     }//GEN-LAST:event_detatilbtn6ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
