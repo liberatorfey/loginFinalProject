@@ -1,14 +1,5 @@
-
-import java.awt.Image;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLConnection;
 import java.util.*;
-import javax.imageio.ImageIO;
 import javax.swing.*;
-
 public abstract class MainpageService {
 
     public static ArrayList<Product> showAllProduct() {
@@ -66,6 +57,11 @@ public abstract class MainpageService {
             cart.setVisible(true);
         }
     }
+
+
+
+
+
 
     abstract public  void showProfile() ;
     abstract public  void addtoCart();

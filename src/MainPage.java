@@ -14,6 +14,7 @@ import javax.swing.JOptionPane;
  * @author Jirawan
  */
 public class MainPage extends javax.swing.JFrame {
+    
 
     /**
      * Creates new form NewJFrame
@@ -311,6 +312,10 @@ public class MainPage extends javax.swing.JFrame {
 
     private void cartBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cartBtnActionPerformed
         MainpageService.showCart();
+        String user ;
+         user = LoginForm.usercurent;
+         System.out.println(user);
+         System.out.println("MainPage.main()");
         
     }//GEN-LAST:event_cartBtnActionPerformed
 
